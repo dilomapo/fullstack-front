@@ -1,0 +1,24 @@
+.div1{
+    display:inline-block;
+    transform: translateY(-150%);
+}
+
+.div2{
+    display:inline-block;
+}
+
+*{font-family: verdana;}
+
+.div3{
+    
+    background-color: #55ccff;
+}
+
+.div4{
+    margin: 10px;
+}
+
+.div5{
+   
+    background-color: #40ccbb;
+}

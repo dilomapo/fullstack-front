@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body class="estilo" >
+    <div class="div2">    
+        <img src="images/pizza-planet2.png" alt="logo Pizza Planet">   
+    </div>    
+    <div class="div1">
+        <h1 style="color: red;"> Pizzas Full Stack Micro4 </h1> 
+    </div>  
+
+    <div id="alertas"></div>
+    <form id="formulario" name="formulario"  method="post" action="http://127.0.0.1:5000/pizza">    
+
+    <h2 style="color: blue;"> Datos del cliente </h2>    
+        <div id="msg" class="div3">
+            <div class="div4">
+                <label id="lbnm" for="nm">Nombres:  </label>
+                <input type="text" name="nm" id="nm">
+            </div>    
+            <div  class="div4">    
+                <label id="lbap" for="ap">Apellidos: </label>
+                <input type="text" name="ap" id="ap">
+            </div>
+            <div  class="div4">    
+                <label for="fec">Fecha de Nacimiento:</label>
+                <input type="date" name="fec" id="fec">
+            </div>
+            <div  class="div4">    
+                <label for="tel">Número de teléfono:</label>
+                <input type="text" name="tel" id="tel">
+            </div>    
+        </div>
+        
+
+        <h2 style="color: blue;"> Datos del pedido </h2> 
+        <div class="div5">
+            <div>    
+                <label for="tam">Tamaño de la pizza</label>
+                <select name="tam" id="tam">
+                    <option id="Grande" selected>Grande</option>
+                    <option id="Mediana">Mediana</option>
+                    <option id="Pequeña">Pequeña</option>
+                </select>
+            </div>
+            <div>    
+                <h3> Ingredientes </h3>
+                <label for="jam">Jamón York</label>
+                <input type="checkbox" name="jam" id="jam">
+                <label for="cha">Champiñones</label>
+                <input type="checkbox" name="cha" id="cha">
+                <label for="pep">Pepperoni</label>
+                <input type="checkbox" name="pep" id="pep">
+                <label for="ace">Aceitunas</label>
+                <input type="checkbox" name="ace" id="ace">
+            </div>    
+        </div>
+
+        <div> 
+            <p>
+
+            </p>                    
+            <button style="color: blue;" type="reset">Borrar</button>
+            <button style="color: blue;" type="submit">Solicitar</button>            
+        </div> 
+    </form>   
+       
+    <script src="js/scriptjquery.js"> </script> 
+</body>
+</html>
