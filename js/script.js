@@ -20,3 +20,21 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     }
 });
 
+document.getElementById("tam").addEventListener("change", function(event){
+    let vTam = document.getElementById("tam").value;  
+    console.log(vTam);
+    resultado_tamano.text=""
+
+    if(vTam=="S")
+    {
+        resultado_tamano.text="No Disponible"
+        console.log("No Disponible");
+        event.preventDefault();
+    }
+    else
+    {
+        resultado_tamano.text="Disponible"
+        console.log("No Disponible");
+        event.preventDefault();
+    }
+});
